@@ -1,3 +1,11 @@
+---
+Current maintainer: youwuyou (youwuyou@ethz.ch)
+In relation to lecture by: CSC Finnland
+---
+
+
+
+
 # CSC Summer School in High-Performance Computing 2022
 
 This is the material repository for the high-performance computing summer school by CSC - Finnish IT Center for Science.
@@ -7,10 +15,6 @@ Once forked to yourself, you can sync with the original repository (in case of u
 git pull https://github.com/csc-training/summerschool.git
 ```
 
----
-Current maintainer: youwuyou (youwuyou@ethz.ch)
-In relation to lecture by: CSC Finnland
----
 
 
 # **Exercise Overview**
