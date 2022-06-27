@@ -30,10 +30,32 @@ git pull https://github.com/csc-training/summerschool.git
 
 ### Chapter 1: MPI
 
-| Number | Topic | Finished |
+| Topic | Name | Finished |
 | --- | --- | --- |
-| Code exercise B.1 | TestFiniteSetRepresentation | :heavy_check_mark: |
-| Code exercise 1 |  |  |
+| Introduction | Hello world | :heavy_check_mark: |
+| Point-to-point communication | simple message exchange | :heavy_check_mark: |
+| Point-to-point communication | simple parallel pi | :heavy_check_mark: |
+| Communication patterns | message chain |  |
+| Communication patterns | parallel pi |  |
+| Communication patterns | broadcast and scatter |  |
+| Collective operations | collective operations |  |
+| Custom communicators | communicators and collectives |  |
+| Heat equation | parallel heat equation solver |  |
+| Heat equation | heat equation solver with sendrecv |  |
+| Heat equation | collective communication in heat equation solver |  |
+| Simple derived types | simple datatypes |  |
+| advanced derived types | communicating struct/derived type |  |
+| advanced derived types | modifying extent |  |
+| process topologies | cartesian grid process topology |  |
+| process topologies | message chain with Cartesian communicator |  |
+| Non-blocking communication | Non-blocking message chain |  |
+| Non-blocking communication | message chain with persistent communication |  |
+| Heat equation | heat equation with cartesian communicator |  |
+| Heat equation | non-blocking communication in heat equation |  |
+| Heat equation | 2D-decomposed heat equation |  |
+
+
+
 
 ### Chapter 2: Parallel I/O
 
