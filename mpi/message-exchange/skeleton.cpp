@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <vector>
 #include <mpi.h>
+#include <iostream>
 
 int main(int argc, char *argv[])
 {
@@ -23,12 +24,17 @@ int main(int argc, char *argv[])
     // TODO: Implement sending and receiving as defined in the assignment
     // Send msgsize elements from the array "message", and receive into 
     // "receiveBuffer"
-    if (myid == 0) {
+    int nrec = arraysize + 1;
 
-        printf("Rank %i received %i elements, first %i\n", myid, nrecv, receiveBuffer[0]);
+    if (myid == 0) {
+        MPI_Send(message.data(), msgsize, MPI_INT, 1, 1, MPI_COMM_WORLD);
+        MPI_Recv(receiveBuffer.data(), nrec, MPI_INT, 1, 0, MPI_COMM_WORLD, &status);
+        printf("Rank %i received %i elements, first %i\n", myid, nrec, receiveBuffer[0]);
     } else if (myid == 1) {
 
-        printf("Rank %i received %i elements, first %i\n", myid, nrecv, receiveBuffer[0]);
+        MPI_Recv(receiveBuffer.data(), nrec, MPI_INT, 0, 1, MPI_COMM_WORLD, &status);
+        MPI_Send(message.data(), msgsize, MPI_INT, 0, 0, MPI_COMM_WORLD);
+        printf("Rank %i received %i elements, first %i\n", myid, nrec, receiveBuffer[0]);
     }
 
     MPI_Finalize();
