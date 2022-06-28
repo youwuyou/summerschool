@@ -93,15 +93,35 @@ git pull https://github.com/csc-training/summerschool.git
 
 | Topic | Name | Finished |
 | --- | --- | --- |
-| Code exercise 1 |  |  |
+| Intro to GPUs in HPC | device query |  |
+| Basics of OpenMP offloading | Hello world |  |
+| Basics of OpenMP offloading | vector addition |  |
+| Basics of OpenMP offloading | simple offloading for Laplace equation |  |
+| Controlling data movement | dot product | |
+| Controlling data movement | sum and dot product | |
+| Controlling data movement | offloading the heat equation | |
+| Unstructed data || unstructed data in heat equation | |
+| Device functions | device functions | |
+| Interoperability with libraries | using CUDA library | |
+| Asynchronous operations | Asynchronous operations | |
+| Using multiple GPUS | multi-GPU parallelization for heat equation | |
 
 
 ### Chapter 5: GPU programming with HIP
 
 | Topic | Name | Finished |
 | --- | --- | --- |
-| Code exercise 1 |  |  |
-
+| Basics of HIP programming | hello world |  |
+| Basics of HIP programming | Kernel: saxpy |  |
+| Basics of HIP programming | Kernel: copy2d |  |
+| Synchronisation and streams | investigating streams and events | |
+| Memory management | memory management strategies |  |
+| Memory management | unified memory and structs |  |
+| Fortran and HIP | Hipfort: saxpy |  |
+| Multi-GPU programming | vector sum on two GPUs without MPI |  |
+| Multi-GPU programming | ping-pong with multiple GPUs and MPI |  |
+| Multi-GPU programming | peer to peer device access |  |
+| Multi-GPU programming | Bonus: Heat equation with HIP |  |
 
 
 
