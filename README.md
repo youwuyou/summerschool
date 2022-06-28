@@ -59,27 +59,46 @@ git pull https://github.com/csc-training/summerschool.git
 
 ### Chapter 2: Parallel I/O
 
-| Number | Topic | Finished |
+| Topic | Name | Finished |
 | --- | --- | --- |
-| Code exercise 1 |  |  |
+|  | Parallel I/O with Posix |  |
+|  | Simple MPI-IO |  |
+|  | HDF5 example |  |
+|  | Bonus: Checkpoint + restart with MPI-IO |  |
+
 
 ### Chapter 3: Hybrid MPI/OpenMP
 
-| Number | Topic | Finished |
+| Topic | Name | Finished |
 | --- | --- | --- |
-| Code exercise 1 |  |  |
+| Intro OpenMP | hello world |  |
+| Intro OpenMP | work sharing and vector addition |  |
+| Library functions | OpenMP library functions |  |
+| Data sharing | Data sharing and parallel regions |  |
+| Data sharing | race condition in parallel sum |  |
+| Reductions and execution controls | reduction |  |
+| Reductions and execution controls | execution controls |  |
+| Heat equation | fine grain parallelization |  |
+| Heat equation | coarse grain parallelization |  |
+| Hybrid MPI+OpenMP programming | hybrid hello world |  |
+| Hybrid MPI+OpenMP programming | multiple thread communication |  |
+| OpenMP tasks | simple tasking |  |
+| OpenMP tasks | Parallelizing Mandelbrot with tasks |  |
+| OpenMP tasks | Parallel Fibonacci |  |
+| Hybrid heat equation | hybrid heat equation |  |
+
 
 
 ### Chapter 4: GPU programming with OpenMP
 
-| Number | Topic | Finished |
+| Topic | Name | Finished |
 | --- | --- | --- |
 | Code exercise 1 |  |  |
 
 
 ### Chapter 5: GPU programming with HIP
 
-| Number | Topic | Finished |
+| Topic | Name | Finished |
 | --- | --- | --- |
 | Code exercise 1 |  |  |
 
