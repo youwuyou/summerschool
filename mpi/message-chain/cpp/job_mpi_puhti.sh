@@ -6,4 +6,4 @@
 #SBATCH --time=00:05:00
 #SBATCH --ntasks=4
 
-srun topo > periodic.out
+srun ./chain

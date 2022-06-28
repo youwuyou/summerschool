@@ -14,15 +14,13 @@ and displacement parameters of the MPI_Cart_shift routine.
 */
 
 
-
-
 int main(int argc, char *argv[])
 {
     int ntasks, my_id, irank;
     int dims[2];      /* Dimensions of the grid */
     int coords[2];    /* Coordinates in the grid */
     int neighbors[4]; /* Neighbors in 2D grid */
-    int period[2] = {1, 1};
+    int period[2] = {1, 1};  // NON-periodic when both false => out-of boundary part is -2
     MPI_Comm comm2d;
 
     MPI_Init(&argc, &argv);
