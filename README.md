@@ -35,15 +35,15 @@ git pull https://github.com/csc-training/summerschool.git
 | Introduction | Hello world | :heavy_check_mark: |
 | Point-to-point communication | simple message exchange | :heavy_check_mark: |
 | Point-to-point communication | simple parallel pi | :heavy_check_mark: |
-| Communication patterns | message chain |  |
-| Communication patterns | parallel pi |  |
+| Communication patterns | message chain | :heavy_check_mark: |
+| Communication patterns | parallel pi | :white_check_mark:	 |
 | Communication patterns | broadcast and scatter |  |
 | Collective operations | collective operations |  |
 | Custom communicators | communicators and collectives |  |
 | Heat equation | parallel heat equation solver |  |
 | Heat equation | heat equation solver with sendrecv |  |
 | Heat equation | collective communication in heat equation solver |  |
-| Simple derived types | simple datatypes |  |
+| Simple derived types | simple datatypes | :white_check_mark:	 |
 | advanced derived types | communicating struct/derived type | :heavy_check_mark: |
 | advanced derived types | modifying extent |  |
 | process topologies | cartesian grid process topology | :heavy_check_mark: |
