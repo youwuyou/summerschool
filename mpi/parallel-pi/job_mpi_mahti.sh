@@ -4,6 +4,6 @@
 #SBATCH --partition=medium
 #SBATCH --reservation=summerschool
 #SBATCH --time=00:05:00
-#SBATCH --ntasks=20
+#SBATCH --ntasks=40
 
-srun ./chain
+srun ./parallel_pi > p_pi.out
