@@ -38,7 +38,7 @@ git pull https://github.com/csc-training/summerschool.git
 | Communication patterns | message chain | :heavy_check_mark: |
 | Communication patterns | parallel pi | :white_check_mark:	 |
 | Communication patterns | broadcast and scatter |  |
-| Collective operations | collective operations |  |
+| Collective operations | collective operations | :heavy_check_mark: |
 | Custom communicators | communicators and collectives |  |
 | Heat equation | parallel heat equation solver |  |
 | Heat equation | heat equation solver with sendrecv |  |
