@@ -44,9 +44,9 @@ git pull https://github.com/csc-training/summerschool.git
 | Heat equation | heat equation solver with sendrecv |  |
 | Heat equation | collective communication in heat equation solver |  |
 | Simple derived types | simple datatypes |  |
-| advanced derived types | communicating struct/derived type |  |
+| advanced derived types | communicating struct/derived type | :heavy_check_mark: |
 | advanced derived types | modifying extent |  |
-| process topologies | cartesian grid process topology |  |
+| process topologies | cartesian grid process topology | :heavy_check_mark: |
 | process topologies | message chain with Cartesian communicator |  |
 | Non-blocking communication | Non-blocking message chain |  |
 | Non-blocking communication | message chain with persistent communication |  |
