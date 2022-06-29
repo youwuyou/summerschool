@@ -61,7 +61,7 @@ git pull https://github.com/csc-training/summerschool.git
 
 | Topic | Name | Finished |
 | --- | --- | --- |
-| Intermediate level | Parallel I/O with Posix |  |
+| Intermediate level | Parallel I/O with Posix | :white_check_mark: |
 | Intermediate level | Simple MPI-IO |  |
 | High-level | HDF5 example |  |
 |  | Bonus: Checkpoint + restart with MPI-IO |  |
