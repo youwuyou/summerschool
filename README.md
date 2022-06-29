@@ -74,11 +74,11 @@ git pull https://github.com/csc-training/summerschool.git
 
 | Topic | Name | Finished |
 | --- | --- | --- |
-| Intro OpenMP | hello world |  |
-| Intro OpenMP | work sharing and vector addition |  |
-| Library functions | OpenMP library functions |  |
-| Data sharing | Data sharing and parallel regions |  |
-| Data sharing | race condition in parallel sum |  |
+| Intro OpenMP | hello world | :heavy_check_mark: |
+| Intro OpenMP | work sharing and vector addition | :heavy_check_mark: |
+| Library functions | OpenMP library functions | :heavy_check_mark: |
+| Data sharing | Data sharing and parallel regions | :heavy_check_mark: |
+| Data sharing | race condition in parallel sum | :heavy_check_mark: |
 | Reductions and execution controls | reduction |  |
 | Reductions and execution controls | execution controls |  |
 | Heat equation | fine grain parallelization |  |
