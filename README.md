@@ -61,10 +61,13 @@ git pull https://github.com/csc-training/summerschool.git
 
 | Topic | Name | Finished |
 | --- | --- | --- |
-|  | Parallel I/O with Posix |  |
-|  | Simple MPI-IO |  |
-|  | HDF5 example |  |
+| Intermediate level | Parallel I/O with Posix |  |
+| Intermediate level | Simple MPI-IO |  |
+| High-level | HDF5 example |  |
 |  | Bonus: Checkpoint + restart with MPI-IO |  |
+
+![image](https://user-images.githubusercontent.com/82619264/176366882-a0745170-2416-4fa1-9c1d-be8ca1c37be3.png)
+
 
 
 ### Chapter 3: Hybrid MPI/OpenMP
