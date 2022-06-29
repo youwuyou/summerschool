@@ -19,10 +19,12 @@ int main(void)
 
     sum = 0.0;
     /* TODO: Parallelize computation */
+    #pragma omp parallel for default(shared) private(i)
     for (i = 0; i < NX; i++) {
         sum += vecA[i];
     }
-    printf("Sum: %ld\n", sum);
+
+    printf("Sum: %ld\n,   exact sum:  %ld\n", sum, sumex);
 
     return 0;
 }
