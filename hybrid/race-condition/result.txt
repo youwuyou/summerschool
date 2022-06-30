@@ -1,0 +1,12 @@
+Arithmetic sum formula (exact):                  5242931200
+Sum: 5242931200
+,   exact sum:  5242931200
+Arithmetic sum formula (exact):                  5242931200
+Sum: 5242931200
+,   exact sum:  5242931200
+Arithmetic sum formula (exact):                  5242931200
+Sum: 5242931200
+,   exact sum:  5242931200
+Arithmetic sum formula (exact):                  5242931200
+Sum: 5242931200
+,   exact sum:  5242931200
