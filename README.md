@@ -79,8 +79,8 @@ git pull https://github.com/csc-training/summerschool.git
 | Library functions | OpenMP library functions | :heavy_check_mark: |
 | Data sharing | Data sharing and parallel regions | :heavy_check_mark: |
 | Data sharing | race condition in parallel sum | :heavy_check_mark: |
-| Reductions and execution controls | reduction |  |
-| Reductions and execution controls | execution controls |  |
+| Reductions and execution controls | reduction | :heavy_check_mark: |
+| Reductions and execution controls | execution controls | :heavy_check_mark: |
 | Heat equation | fine grain parallelization |  |
 | Heat equation | coarse grain parallelization |  |
 | Hybrid MPI+OpenMP programming | hybrid hello world |  |
