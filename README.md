@@ -96,14 +96,14 @@ git pull https://github.com/csc-training/summerschool.git
 
 | Topic | Name | Finished |
 | --- | --- | --- |
-| Intro to GPUs in HPC | device query |  |
-| Basics of OpenMP offloading | Hello world |  |
+| Intro to GPUs in HPC | device query | :white_check_mark: |
+| Basics of OpenMP offloading | Hello world | :heavy_check_mark: |
 | Basics of OpenMP offloading | vector addition |  |
 | Basics of OpenMP offloading | simple offloading for Laplace equation |  |
 | Controlling data movement | dot product | |
 | Controlling data movement | sum and dot product | |
 | Controlling data movement | offloading the heat equation | |
-| Unstructed data || unstructed data in heat equation | |
+| Unstructed data | unstructed data in heat equation | |
 | Device functions | device functions | |
 | Interoperability with libraries | using CUDA library | |
 | Asynchronous operations | Asynchronous operations | |
