@@ -31,6 +31,26 @@ float cpu_pi(int n)
 }
 
 
+// todo add data construct
+// target speicify region to be executed on GPU
+// teams create a league
+// parallel for threads inside each team
+/*
+#pragma omp target
+#pragma omp teams
+#pragma omp parallel
+{
+
+
+
+
+}
+
+*/
+
+
+
+
 float gpu_pi(size_t n)
 {
     curandGenerator_t g;
@@ -100,8 +120,8 @@ int main(int argc, char *argv[])
         nsamples = atoi(argv[1]);
     }
 
-    printf("Pi equals to %9.6f\n", cpu_pi(nsamples));
-    printf("Pi equals to %9.6f\n", gpu_pi(nsamples));
+    printf("Pi calculated by CPU equals to %9.6f\n", cpu_pi(nsamples));
+    printf("Pi calculated by GPU equals to %9.6f\n", gpu_pi(nsamples));
 
     return 0;
 }
