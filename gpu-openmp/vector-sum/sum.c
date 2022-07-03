@@ -14,7 +14,12 @@ int main(void)
 
     // TODO: Implement vector addition vecC = vecA + vecB and use OpenMP
     //       for computing it in the device
-
+    // try out
+    // i). teams
+    // ii). parallel
+    // iii). distribute
+    // iv). for/do
+    // v). loop
     double sum = 0.0;
     /* Compute the check value */
     for (int i = 0; i < NX; i++) {

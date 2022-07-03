@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
 {
     int i, myid, ntasks;
     constexpr int size = 10000000;
-    std::vector<int> message(size);
-    std::vector<int> receiveBuffer(size);
+    std::vector<int> message(size);       // allocate message of wanted size
+    std::vector<int> receiveBuffer(size); // alocate message of wanted size
     MPI_Status status;
 
     double t0, t1;
@@ -20,18 +20,27 @@ int main(int argc, char *argv[])
     MPI_Comm_size(MPI_COMM_WORLD, &ntasks);
     MPI_Comm_rank(MPI_COMM_WORLD, &myid);
 
-    // Initialize message
+    // Initialize message and receive buffer
     for (i = 0; i < size; i++) {
         message[i] = myid;
+        receiveBuffer[i] = -1;
     }
 
     // TODO: set source and destination ranks 
     // Treat boundaries with MPI_PROC_NULL
-
-        destination = 
-
-        source = 
-
+    if (myid == 0){
+        source = MPI_PROC_NULL;
+    }
+    else{
+        source = myid - 1;
+    }
+    
+    if (myid == ntasks - 1){
+        destination = MPI_PROC_NULL;
+    }
+    else{
+        destination = myid + 1;
+    }
     // end TODO
 
     // Start measuring the time spent in communication
@@ -39,12 +48,12 @@ int main(int argc, char *argv[])
     t0 = MPI_Wtime();
 
     // TODO: Send messages 
-
+    MPI_Send(message.data(), size, MPI_INT, destination, myid+1, MPI_COMM_WORLD);
     printf("Sender: %d. Sent elements: %d. Tag: %d. Receiver: %d\n",
            myid, size, myid + 1, destination);
 
     // TODO: Receive messages
-
+    MPI_Recv(receiveBuffer.data(), size, MPI_INT, source, myid, MPI_COMM_WORLD, &status);
     printf("Receiver: %d. first element %d.\n",
            myid, receiveBuffer[0]);
 

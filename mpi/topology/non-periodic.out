@@ -1,0 +1,4 @@
+rank:   3, coord: ( 1  1) neighbors=  2,  -2,   1,  -2
+rank:   2, coord: ( 1  0) neighbors= -2,   3,   0,  -2
+rank:   1, coord: ( 0  1) neighbors=  0,  -2,  -2,   3
+rank:   0, coord: ( 0  0) neighbors= -2,   1,  -2,   2

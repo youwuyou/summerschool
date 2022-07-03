@@ -24,31 +24,40 @@ int main()
 
     double t_start = wtime();
 
-    #pragma omp parallel shared(norm, iter)
-    {
-
     // TODO start: add necessary execution controls (single, master, barrier)
     //             in this parallel region
 
+
+/***********************************************************/
+    #pragma omp parallel shared(norm, iter)
+    {
     // Read b
+    #pragma omp single
     read_file(b);
 
     int nx = b.nx;
     int ny = b.ny;
 
     // Allocate space also for  boundaries
+    // NOTE: !! not noticed by me
+    #pragma omp single
     u.allocate(nx + 2, ny + 2);
 
     // Initialize
+    int i, j = 0;
     #pragma omp for
     for (int i=0; i < nx + 2; i++)
         for (int j=0; j < ny + 2; j++) 
             u(i, j) = 0.0;
 
+    #pragma omp single
     unew = u;
+
 
     // Jacobi iteration
     do {
+        #pragma omp barrier
+        #pragma omp single
         norm = 0.0;
 
         #pragma omp for reduction(+:norm)
@@ -61,17 +70,23 @@ int main()
                 norm += (unew(i, j) - u(i, j)) * (unew(i, j) - u(i, j));
             } 
 
+        #pragma omp single
         std::swap(unew, u);
 
-        if (iter % 500 == 0)
-            std::cout << "Iteration " << iter << " norm: " << norm << std::endl;
-        iter++;    
+
+        #pragma omp master
+        {
+            if (iter % 500 == 0)
+                std::cout << "Iteration " << iter << " norm: " << norm << std::endl;
+            iter++;    
+        }
 
     } while (norm > eps);
 
     // TODO end
 
     } // end parallel
+/***********************************************************/
 
     double t_end = wtime();
 

@@ -4,6 +4,20 @@
 #include <omp.h>
 #endif
 
+/*
+  Task 1: compile without offloading support
+    - with only -mp option
+    - run the code in a GPU node
+
+  Task 2: with offloading
+    - with -mp=gpu -gpu=cc70
+    - 
+
+
+*/
+
+
+
 int main()
 {
   int num_devices = omp_get_num_devices();

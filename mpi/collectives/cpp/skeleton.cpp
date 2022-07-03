@@ -36,9 +36,30 @@ int main(int argc, char *argv[])
     /* TODO: use a single collective communication call (and maybe prepare
      *       some parameters for the call) */
 
+    int root = 0;
+    // Task 1: broadcast the data of process1 to all
+    // MPI_Bcast(sendbuf.data(), 2 * NTASKS, MPI_INT, root, MPI_COMM_WORLD);
+ 
+    // Task 2: scatter the data
+    // MPI_Scatter(sendbuf.data(), 2, MPI_INT, recvbuf.data(), 2, MPI_INT, root, MPI_COMM_WORLD);
+
+    // Task 3: gather vector
+    // int revcounts[NTASKS] = {1, 1, 2, 4};
+    // int displs[NTASKS] = { 0, 1, 2, 4};  // always at first place
+    // MPI_Gatherv(sendbuf.data(), revcounts[rank], MPI_INT, recvbuf.data(), revcounts, displs, MPI_INT, 1, MPI_COMM_WORLD);
+    
+    // Task 4: all to all
+    // from each process two are sent
+    MPI_Alltoall(sendbuf.data(), 2, MPI_INT, recvbuf.data(), 2, MPI_INT, MPI_COMM_WORLD);
+
     /* Print data that was received */
     /* TODO: add correct buffer */
-    print_buffers(printbuf.data(), ..., 2 * NTASKS);
+    // Task 1: sendbuf.data()
+    //print_buffers(int *printbuffer, int *sendbuffer, int buffersize)
+
+    // Task 2, 3, 4: recvbuf.data()
+    print_buffers(printbuf.data(), recvbuf.data(), 2 * NTASKS);
+
 
     MPI_Finalize();
     return 0;
