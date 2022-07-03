@@ -1,0 +1,9 @@
+Device : Tesla V100-SXM2-32GB
+Duration for sequential transfer and execute: 6.024896 (ms)
+  max error: 1.192093e-07
+Case 1 - Duration for asynchronous kernels: 5.940928 (ms)
+  max error: 1.192093e-07
+Case 2 - Duration for asynchronous transfer+kernels: 6.347776 (ms)
+  max error: 1.192093e-07
+Case 3 - Duration for asynchronous transfer+kernels: 5.899712 (ms)
+  max error: 1.192093e-07
