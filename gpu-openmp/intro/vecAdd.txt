@@ -1,0 +1,13 @@
+
+Lmod is automatically replacing "intel/19.0.4" with "gcc/9.1.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) hpcx-mpi/2.4.0     2) intel-mkl/2019.0.4
+
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+CUDA kernel launch with 196 blocks of 256 threads
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
