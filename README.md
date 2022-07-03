@@ -117,7 +117,7 @@ git pull https://github.com/csc-training/summerschool.git
 | Basics of HIP programming | hello world | :heavy_check_mark: |
 | Basics of HIP programming | Kernel: saxpy | :heavy_check_mark: |
 | Basics of HIP programming | Kernel: copy2d | :heavy_check_mark: |
-| Synchronisation and streams | investigating streams and events | |
+| Synchronisation and streams | investigating streams and events | :heavy_check_mark: |
 | Memory management | memory management strategies |  |
 | Memory management | unified memory and structs |  |
 | Fortran and HIP | Hipfort: saxpy |  |
