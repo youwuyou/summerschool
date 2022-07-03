@@ -114,7 +114,7 @@ git pull https://github.com/csc-training/summerschool.git
 
 | Topic | Name | Finished |
 | --- | --- | --- |
-| Basics of HIP programming | hello world |  |
+| Basics of HIP programming | hello world | :heavy_check_mark: |
 | Basics of HIP programming | Kernel: saxpy |  |
 | Basics of HIP programming | Kernel: copy2d |  |
 | Synchronisation and streams | investigating streams and events | |
