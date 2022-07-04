@@ -121,7 +121,7 @@ git pull https://github.com/csc-training/summerschool.git
 | Memory management | memory management strategies | :white_check_mark: |
 | Memory management | unified memory and structs | :heavy_check_mark: |
 | Fortran and HIP | Hipfort: saxpy | :heavy_check_mark: |
-| Multi-GPU programming | vector sum on two GPUs without MPI |  |
+| Multi-GPU programming | vector sum on two GPUs without MPI | :heavy_check_mark: |
 | Multi-GPU programming | ping-pong with multiple GPUs and MPI |  |
 | Multi-GPU programming | peer to peer device access |  |
 | Multi-GPU programming | Bonus: Heat equation with HIP |  |
